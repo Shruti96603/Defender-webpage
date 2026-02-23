@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Rover Defender | Official Assignment</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --defender-dark: #1a1a1a;
+            --defender-green: #2c3e2d;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: var(--defender-dark);
+            padding: 15px 0;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .dropdown-menu .dropdown-submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+        .dropdown-item:hover > .dropdown-submenu {
+            display: block;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://w0.peakpx.com/wallpaper/178/666/HD-wallpaper-2021-land-rover-defender-90-front-three-quarter-car.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .custom-card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+            max-width: 450px;
+            margin: auto;
+            background: white;
+        }
+        .custom-card:hover {
+            transform: translateY(-10px);
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .form-box {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: var(--defender-dark);
+            color: #ccc;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">LAND ROVER</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navDrop" data-bs-toggle="dropdown">Vehicles</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Defender 90</a></li>
+                            <li class="dropdown-item">
+                                Defender 110 &raquo;
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li><a class="dropdown-item" href="#">Hard Top</a></li>
+                                    <li><a class="dropdown-item" href="#">V8 Edition</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-bg">
+        <div class="container">
+            <h1 class="mb-4">THE UNSTOPPABLE DEFENDER</h1>
+            
+            <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://www.landrover.com/defender" target="_blank" class="card-link">
+                            <div class="card custom-card">
+                                <img src="https://w0.peakpx.com/wallpaper/200/503/HD-wallpaper-land-rover-land-rover-defender-car-suv-snow-vehicle.jpg" class="card-img-top" alt="Defender 1">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Defender 110 Exploration</h5>
+                                    <p class="text-muted">Master of every terrain. Click to see specs.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.landrover.com/defender" target="_blank" class="card-link">
+                            <div class="card custom-card">
+                                <img src="https://www.hdwallpapers.in/download/green_land_rover_defender_110_75th_limited_edition_2023_4k_hd_cars-HD.jpg" class="card-img-top" alt="Defender 2">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Urban Performance</h5>
+                                    <p class="text-muted">Style meets power in the city. Click for details.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.landrover.com/defender" target="_blank" class="card-link">
+                            <div class="card custom-card">
+                                <img src="https://jlr.scene7.com/is/image/jlr/L66326GL_303104383_065?wid=600&fit=stretch%2C1" class="card-img-top" alt="Defender 3">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Modern Interior</h5>
+                                    <p class="text-muted">Pure comfort and rugged build. Click for tour.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<div class="container mt-5">
+    <h2 class="text-center fw-bold mb-4 text-uppercase">Defender Highlights</h2>
+    
+    <div class="row g-4 text-center">
+        
+        <div class="col-md-4">
+            <div class="p-4 bg-white shadow rounded">
+                <h4 class="fw-bold">518 HP</h4>
+                <p class="text-muted">Maximum Power Output</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="p-4 bg-white shadow rounded">
+                <h4 class="fw-bold">0-100 km/h</h4>
+                <p class="text-muted">5.2 Seconds Acceleration</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="p-4 bg-white shadow rounded">
+                <h4 class="fw-bold">900mm</h4>
+                <p class="text-muted">Maximum Wading Depth</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4">
+                <h2 class="fw-bold">ICONIC DESIGN</h2>
+                <p class="text-secondary lead">Defender is the strongest and most capable vehicle we have ever created. It features permanent All-Wheel Drive and an eight-speed automatic transmission.</p>
+                <ul class="list-unstyled mt-3">
+                    <li><strong>✓</strong> Configurable Terrain Response</li>
+                    <li><strong>✓</strong> Electronic Air Suspension</li>
+                    <li><strong>✓</strong> 3,500kg Towing Capacity</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="form-box">
+                    <h4 class="mb-4 text-center">Inquiry Form</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Contact Number</label>
+                            <input type="tel" class="form-control" placeholder="+91 0000000000">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Model Preferred</label>
+                            <select class="form-select">
+                                <option>Defender 90 (3-Door)</option>
+                                <option>Defender 110 (5-Door)</option>
+                                <option>Defender 130 (8-Seater)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 py-2">Submit Interest</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-2">© 2026 Land Rover Defender Fanpage | Student Project</p>
+            <p class="small text-muted">All images via Unsplash. No copyright infringement intended.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
